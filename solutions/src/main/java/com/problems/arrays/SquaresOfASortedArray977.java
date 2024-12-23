@@ -2,6 +2,16 @@ package main.java.com.problems.arrays;
 
 import java.util.Arrays;
 
+/*
+https://leetcode.com/problems/squares-of-a-sorted-array/
+
+Given an integer array nums sorted in non-decreasing order,
+ return an array of the squares of each number sorted in
+ non-decreasing order.
+
+
+ */
+
 public class SquaresOfASortedArray977 {
     public static void main(String[] args) {
         int[] nums = {-4,-1,0,3,10};
