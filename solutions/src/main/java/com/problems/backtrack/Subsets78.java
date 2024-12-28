@@ -3,6 +3,17 @@ package main.java.com.problems.backtrack;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+https://leetcode.com/problems/subsets/description/
+
+Medium
+
+    Given an integer array nums of unique elements, return all possible
+subsets
+ (the power set).
+
+The solution set must not contain duplicate subsets. Return the solution in any order.
+ */
 public class Subsets78 {
     public static void main(String[] args) {
         int[] nums = {1,2,3};
