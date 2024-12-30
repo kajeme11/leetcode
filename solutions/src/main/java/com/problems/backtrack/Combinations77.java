@@ -37,6 +37,9 @@ public class Combinations77 {
        Recursive Stack O(k)
        output O(n/k)
        Space Complexity O(k * (n/k)),
+
+       n = 4, k = 2
+       C(4, 2) = n!/k!(n-k)! =  4!/2!(4-2)! = 24/4 = 6
    */
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
