@@ -25,7 +25,7 @@ public class ReverseLinkedList2 {
         ListNode.displayList(root);
     }
 
-    public ListNode reverseBetween(ListNode head, int left, int right) {
+    public static ListNode reverseBetween(ListNode head, int left, int right) {
 
 /*
 left = 3, right = 4

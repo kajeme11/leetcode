@@ -22,27 +22,24 @@ public class PalindromeLinkedList234 {
         System.out.println(isPalindrome(root));
     }
 
-    /*
-        1.have a current pointer poiting to head
-        2.Create a slow and fast pointes to find middle of linked list
-        3.reverse the list starting from the slow pointer
-        4.Now we can check if current value == slow value
-        and move current and slow pointer
-        5.if the value are not the same return false
-        6.if loop did not find different values return true
 
-        Time Complexity O(n)
-        Space Complexity O(1)
-     */
+    /*
+
+            1.check if head is null and hea.next is null, if it is return true
+            2.create a slow pointer and fast pointer to find the middle of a linked list
+            3.reverse slow pointer
+            4.create a current node pointing at head
+            5.while slod pointer is not null, check if current's value equals to
+            the value in slow pointer
+                -if values don't match return false
+            6.return true asterwards if every value matched
+
+            Time Complexity O(n)
+            Space Complexity O(1)
+    */
     public static boolean isPalindrome(ListNode head) {
 
         if(head == null || head.next == null){
-            return true;
-        }
-        if(head.next.next == null && head.val != head.next.val){
-            return false;
-        }
-        if(head.next.next == null && head.val == head.next.val){
             return true;
         }
 
@@ -53,8 +50,17 @@ public class PalindromeLinkedList234 {
             slow = slow.next;
             fast = fast.next.next;
         }
+        /**
+         1 2 3 4 5 6 7 8
+         s
+         f
+         1 2 3 4 5 6 7 8 9
+         s
+         f
+
+         */
         slow = reverse(slow);
-        while(current != null && slow != null){
+        while(slow != null){
             if(current.val != slow.val){
                 return false;
             }
