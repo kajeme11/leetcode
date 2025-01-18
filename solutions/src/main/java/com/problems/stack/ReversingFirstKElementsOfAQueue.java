@@ -25,7 +25,9 @@ public class ReversingFirstKElementsOfAQueue {
                 Time Complexity O(n), for traversing n elements
                 Space Complexity O(k), for storing k elements
          */
-
+        long i1 = 2147483647;
+        long i2 = 2147483647;
+        System.out.println(i1 + i2);
         Queue<Integer> q = new LinkedList<>();
         q.add(10);
         q.add(20);
