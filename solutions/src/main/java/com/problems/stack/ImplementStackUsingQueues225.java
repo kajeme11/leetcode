@@ -1,9 +1,6 @@
 package main.java.com.problems.stack;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 /*
 
@@ -24,6 +21,8 @@ public class ImplementStackUsingQueues225 {
     public static void main(String[] args) {
         MyStack s = new MyStack();
 
+        int[] a = {1, 2, 3};
+        Queue<Integer> q = new PriorityQueue<>();
 
     }
 
