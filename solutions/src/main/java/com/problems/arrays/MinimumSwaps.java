@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MinimumSwaps {
+    /*
+            GIVEN 2 ARRAY, WHAT ARE THE MINIMUM SWAPS
+            TO MAKE AN ARRAY LOOK LIKE THE OTHER ONE
+     */
 
     public static void main(String[] args) {
 
