@@ -22,6 +22,9 @@ class UniqueElement{
             l
               r
 
+Time Complexity O(n^2)
+Space Complexity O(1)
+
      */
 
     public static boolean uniqueElementsInString(String s){
